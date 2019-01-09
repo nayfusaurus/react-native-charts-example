@@ -16,7 +16,7 @@ import {
 } from "react-native-svg-charts";
 import { Grid as EasyGrid, Row as EasyRow } from "react-native-easy-grid";
 
-export default class rn_svgCharts extends React.PureComponent {
+export default class rn_svgCharts_line extends React.PureComponent {
   render() {
     const data = [
       50,
@@ -52,6 +52,9 @@ export default class rn_svgCharts extends React.PureComponent {
       -20,
       -80
     ];
+    const data3 = [
+        1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+      ]
 
     const axesSvg = { fontSize: 10, fill: "grey" };
     const verticalContentInset = { top: 10, bottom: 10 };
@@ -68,7 +71,7 @@ export default class rn_svgCharts extends React.PureComponent {
         <EasyRow>
           <View style={styles.chartContainer}>
             <YAxis
-              data={data}
+              data={data3}
               style={{ marginBottom: 30 }}
               contentInset={verticalContentInset}
               svg={axesSvg}
@@ -81,30 +84,40 @@ export default class rn_svgCharts extends React.PureComponent {
                 animationDuration={10}
                 svg={{ stroke: "rgba(134, 65, 244, 0.5)" }}
                 contentInset={{ top: 10, bottom: 10 }}
+                yMin={-100}
+                yMax={100}
+                
                 // curve={shape.curveNatural}
               >
                 <Grid />
               </LineChart>
               <LineChart
-                style={StyleSheet.absoluteFill}
+                style={[{flex:1},StyleSheet.absoluteFill]}
                 data={data2}
                 animated={true}
                 animationDuration={10}
                 svg={{ stroke: "rgba(34, 128, 176, 0.5)" }}
                 yMin={-100}
                 yMax={100}
-                // contentInset={{ top: 10, bottom: 10 }}
+                contentInset={{ top: 10, bottom: 10 }}
                 // curve={shape.curveNatural}
-              />
+              >
+              
+              </LineChart>
+              
 
               <XAxis
                 style={{ marginHorizontal: -10, height: xAxisHeight }}
-                data={data}
-                formatLabel={(value, index) => index}
+                data={data3}
+                formatLabel={(value, index) => value}
                 contentInset={{ left: 10, right: 10 }}
                 svg={axesSvg}
               />
             </View>
+                
+
+
+
           </View>
         </EasyRow>
         <EasyRow>
@@ -141,7 +154,7 @@ const styles = StyleSheet.create({
   touchableButton: {
     height: 50,
     width: Dimensions.get("window").width - 50,
-    marginTop: 5,
+    marginTop: 50,
     marginBottom: 5,
     padding: 5,
     borderRadius: 10,

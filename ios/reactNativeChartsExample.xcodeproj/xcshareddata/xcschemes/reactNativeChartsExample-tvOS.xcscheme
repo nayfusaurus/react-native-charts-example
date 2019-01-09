@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "reactNativeChartComparison-tvOS.app"
-               BlueprintName = "reactNativeChartComparison-tvOS"
-               ReferencedContainer = "container:reactNativeChartComparison.xcodeproj">
+               BuildableName = "reactNativeChartsExample-tvOS.app"
+               BlueprintName = "reactNativeChartsExample-tvOS"
+               ReferencedContainer = "container:reactNativeChartsExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "reactNativeChartComparison-tvOSTests.xctest"
-               BlueprintName = "reactNativeChartComparison-tvOSTests"
-               ReferencedContainer = "container:reactNativeChartComparison.xcodeproj">
+               BuildableName = "reactNativeChartsExample-tvOSTests.xctest"
+               BlueprintName = "reactNativeChartsExample-tvOSTests"
+               ReferencedContainer = "container:reactNativeChartsExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "reactNativeChartComparison-tvOSTests.xctest"
-               BlueprintName = "reactNativeChartComparison-tvOSTests"
-               ReferencedContainer = "container:reactNativeChartComparison.xcodeproj">
+               BuildableName = "reactNativeChartsExample-tvOSTests.xctest"
+               BlueprintName = "reactNativeChartsExample-tvOSTests"
+               ReferencedContainer = "container:reactNativeChartsExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "reactNativeChartComparison-tvOS.app"
-            BlueprintName = "reactNativeChartComparison-tvOS"
-            ReferencedContainer = "container:reactNativeChartComparison.xcodeproj">
+            BuildableName = "reactNativeChartsExample-tvOS.app"
+            BlueprintName = "reactNativeChartsExample-tvOS"
+            ReferencedContainer = "container:reactNativeChartsExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "reactNativeChartComparison-tvOS.app"
-            BlueprintName = "reactNativeChartComparison-tvOS"
-            ReferencedContainer = "container:reactNativeChartComparison.xcodeproj">
+            BuildableName = "reactNativeChartsExample-tvOS.app"
+            BlueprintName = "reactNativeChartsExample-tvOS"
+            ReferencedContainer = "container:reactNativeChartsExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "reactNativeChartComparison-tvOS.app"
-            BlueprintName = "reactNativeChartComparison-tvOS"
-            ReferencedContainer = "container:reactNativeChartComparison.xcodeproj">
+            BuildableName = "reactNativeChartsExample-tvOS.app"
+            BlueprintName = "reactNativeChartsExample-tvOS"
+            ReferencedContainer = "container:reactNativeChartsExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

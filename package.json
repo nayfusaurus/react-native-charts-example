@@ -1,5 +1,5 @@
 {
-  "name": "reactNativeChartComparison",
+  "name": "ReactNativeChartsExample",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,22 +7,34 @@
     "test": "jest"
   },
   "dependencies": {
+    "@babel/runtime": "^7.2.0",
     "d3-shape": "^1.2.2",
-    "react": "16.6.0-alpha.8af6728",
-    "react-native": "0.57.3",
+    "immutability-helper": "^2.9.0",
+    "prop-types": "^15.6.2",
+    "react": "16.6.3",
+    "react-native": "0.57.8",
+    "react-native-chart-kit": "^1.2.1",
+    "react-native-charts-wrapper": "^0.5.0",
+    "react-native-d3multiline-chart": "^1.0.18",
     "react-native-easy-grid": "^0.2.0",
-    "react-native-router-flux": "^4.0.5",
-    "react-native-sensors": "^4.1.0",
-    "react-native-svg": "^8.0.8",
-    "react-native-svg-charts": "^5.2.0"
+    "react-native-pure-chart": "^0.0.24",
+    "react-native-responsive-linechart": "^1.5.0",
+    "react-native-router-flux": "^4.0.6",
+    "react-native-svg": "^8.0.10",
+    "react-native-svg-charts": "^5.2.0",
+    "svg-path-properties": "^0.4.7",
+    "victory-native": "^31.0.0"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
     "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.48.1",
-    "react-test-renderer": "16.6.0-alpha.8af6728"
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "resolutions": {
+    "react-native-svg": "8.0.10"
   }
 }

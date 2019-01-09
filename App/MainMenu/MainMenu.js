@@ -10,20 +10,29 @@ import { Actions } from "react-native-router-flux";
 
 export default class MainMenu extends PureComponent {
   route = route => {
-    switch(route){
-        case 1: Actions.rn_svgCharts();
+    switch (route) {
+      case 1:
+        Actions.rn_svgCharts_line();
         break;
-        case 2: 
-
+      case 2:
+        Actions.rn_chartKit_line();
         break;
-        case 3:
-
+      case 3:
+        Actions.rn_responsiveLineChart_line();
         break;
-        case 4:
-
+      case 4:
+        Actions.rn_pureChart_line();
         break;
-        default:
-
+      case 5:
+        Actions.rn_chartWrapper_line();
+        break;
+      case 6:
+        Actions.rn_victoryCharts_line();
+        break;
+      case 7:
+        Actions.rn_d3MultiLineChart_line();
+        break;
+      default:
         break;
     }
   };
@@ -37,7 +46,9 @@ export default class MainMenu extends PureComponent {
           onPress={() => this.route(1)}
         >
           <View>
-            <Text adjustsFontSizeToFit={true}  style={styles.touchableText}>React Native SVG Charts</Text>
+            <Text adjustsFontSizeToFit={true} style={styles.touchableText}>
+              React Native SVG Charts
+            </Text>
           </View>
         </TouchableHighlight>
         <TouchableHighlight
@@ -46,7 +57,9 @@ export default class MainMenu extends PureComponent {
           onPress={() => this.route(2)}
         >
           <View>
-            <Text adjustsFontSizeToFit={true}  style={styles.touchableText}>React Native Chart Kit</Text>
+            <Text adjustsFontSizeToFit={true} style={styles.touchableText}>
+              React Native Chart Kit
+            </Text>
           </View>
         </TouchableHighlight>
         <TouchableHighlight
@@ -55,7 +68,9 @@ export default class MainMenu extends PureComponent {
           onPress={() => this.route(3)}
         >
           <View>
-            <Text adjustsFontSizeToFit={true}  style={styles.touchableText}>React Native Line Chart</Text>
+            <Text adjustsFontSizeToFit={true} style={styles.touchableText}>
+              React Native Responsive Line Chart
+            </Text>
           </View>
         </TouchableHighlight>
         <TouchableHighlight
@@ -64,7 +79,42 @@ export default class MainMenu extends PureComponent {
           onPress={() => this.route(4)}
         >
           <View>
-            <Text adjustsFontSizeToFit={true}  style={styles.touchableText}>React Native Pure Chart</Text>
+            <Text adjustsFontSizeToFit={true} style={styles.touchableText}>
+              React Native Pure Chart
+            </Text>
+          </View>
+        </TouchableHighlight>
+        <TouchableHighlight
+          style={styles.touchableButton}
+          underlayColor={"#FFFFFF"}
+          onPress={() => this.route(5)}
+        >
+          <View>
+            <Text adjustsFontSizeToFit={true} style={styles.touchableText}>
+              React Native Chart Wrapper
+            </Text>
+          </View>
+        </TouchableHighlight>
+        <TouchableHighlight
+          style={styles.touchableButton}
+          underlayColor={"#FFFFFF"}
+          onPress={() => this.route(6)}
+        >
+          <View>
+            <Text adjustsFontSizeToFit={true} style={styles.touchableText}>
+              React Native Victory Chart
+            </Text>
+          </View>
+        </TouchableHighlight>
+        <TouchableHighlight
+          style={styles.touchableButton}
+          underlayColor={"#FFFFFF"}
+          onPress={() => this.route(7)}
+        >
+          <View>
+            <Text adjustsFontSizeToFit={true} style={styles.touchableText}>
+              React Native D3 MultiLine Chart
+            </Text>
           </View>
         </TouchableHighlight>
       </View>
@@ -93,6 +143,6 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   touchableText: {
-      fontWeight: "bold",
+    fontWeight: "bold"
   }
 });
